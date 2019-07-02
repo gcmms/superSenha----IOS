@@ -157,10 +157,8 @@
                         <outlet property="caracterEspecial" destination="N8Z-NK-4eg" id="IaD-Yq-2sV"/>
                         <outlet property="letrasMaiusculas" destination="fVt-Q7-zaf" id="iUd-fE-yZr"/>
                         <outlet property="letrasMinusculas" destination="zFT-Yd-c63" id="0aA-j0-aNq"/>
-                        <outlet property="numeroDigitos" destination="8Dn-BC-Uu9" id="4QU-su-hrq"/>
                         <outlet property="qntCaracter" destination="8Dn-BC-Uu9" id="x6f-7L-fs2"/>
                         <outlet property="qntSenhas" destination="4ZX-JD-219" id="SSn-9k-woU"/>
-                        <outlet property="totalSenhas" destination="4ZX-JD-219" id="NTp-Dh-Zly"/>
                         <outlet property="usarNumeros" destination="vV6-VC-E9H" id="erc-f7-8Pu"/>
                     </connections>
                 </viewController>
@@ -228,10 +226,10 @@
             </objects>
             <point key="canvasLocation" x="1602.8985507246377" y="748.66071428571422"/>
         </scene>
-        <!--View Controller-->
+        <!--Dicas View Controller-->
         <scene sceneID="Jiq-sw-sro">
             <objects>
-                <viewController id="CB1-gW-vDa" sceneMemberID="viewController">
+                <viewController id="CB1-gW-vDa" customClass="DicasViewController" customModule="superSenha" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lTF-pI-pdH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -247,6 +245,9 @@
                                 <state key="normal" title="Fechar">
                                     <color key="titleColor" red="0.59607843140000005" green="0.14117647059999999" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="Fechar:" destination="CB1-gW-vDa" eventType="touchUpInside" id="xh4-AK-8eY"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SCP-pg-J4l">
                                 <rect key="frame" x="20" y="123" width="374" height="701"/>
